@@ -50,6 +50,7 @@ const FALLBACK_CONFIG = {
 export default function StatusChip({ task }) {
   const label  = getDisplayStatus(task);
   const config = CONFIG[label];
+  console.log("Debugging");
 
   if (!config) {
     console.warn(
